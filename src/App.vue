@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import { ref } from "vue";
 
-import HelloOptionsAPI from "./HelloOptionsAPI.vue";
-import HelloCompositionAPI from "./HelloCompositionAPI.vue";
-import Counter from "./Counter.vue";
+import HelloOptionsAPI from "./components/HelloOptionsAPI.vue";
+import HelloCompositionAPI from "./components/HelloCompositionAPI.vue";
+import Counter from "./components/Counter.vue";
 
 const count = ref<number>(0);
 </script>
