@@ -9,5 +9,7 @@ const increment = () => {
 </script>
 
 <template>
-  <button @click="increment">Count is {{ count }}</button>
+  <div>
+    <button @click="increment">Count is {{ count }}</button>
+  </div>
 </template>

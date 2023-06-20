@@ -10,7 +10,9 @@ export default {
 </script>
 
 <template>
-  <h1>Hello component, with option API</h1>
-  <h2>Props:</h2>
-  <code>{{ JSON.stringify($props) }}</code>
+  <div>
+    <h1>Hello component, with option API</h1>
+    <h2>Props:</h2>
+    <code>{{ JSON.stringify($props) }}</code>
+  </div>
 </template>
