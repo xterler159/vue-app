@@ -1,0 +1,16 @@
+<script lang="ts">
+export default {
+  props: {
+    welcomeMsg: String,
+  },
+  setup(props) {
+    console.log("<HelloOptionsAPI /> props:", props);
+  },
+};
+</script>
+
+<template>
+  <h1>Hello component, with option API</h1>
+  <h2>Props:</h2>
+  <code>{{ JSON.stringify($props) }}</code>
+</template>
