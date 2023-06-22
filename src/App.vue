@@ -2,6 +2,7 @@
 import HelloOptionsAPI from "./components/HelloOptionsAPI.vue";
 import HelloCompositionAPI from "./components/HelloCompositionAPI.vue";
 import Counter from "./components/Counter.vue";
+import Slots from "./components/Slots.vue";
 
 const rawHtml = "<span style='color: red'>this is a span</span>";
 </script>
@@ -15,4 +16,9 @@ const rawHtml = "<span style='color: red'>this is a span</span>";
     <p>raw html demo, using text interpolation: {{ rawHtml }}</p>
     <p>raw html demo, using v-html directive: <span v-html="rawHtml"></span></p>
   </div>
+
+  <Slots> Within a slot </Slots>
+  <Slots>
+    <Counter />
+  </Slots>
 </template>
