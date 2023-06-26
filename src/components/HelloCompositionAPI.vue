@@ -1,4 +1,16 @@
+<template>
+  <MainLayout>
+    <div>
+      <h1 class="text-center">Hello component, with composition API</h1>
+      <h2>Props:</h2>
+      <code>{{ JSON.stringify(props) }}</code>
+    </div>
+  </MainLayout>
+</template>
+
 <script setup lang="ts">
+import {} from "vue";
+import MainLayout from "../layouts/MainLayout.vue";
 // we can declare props in this way too
 // const props = defineProps(["welcome-msg"]);
 
@@ -11,11 +23,3 @@ const props = defineProps<HelloCompositionAPIProps>();
 
 console.log("<HelloCompositionAPI /> props:", props);
 </script>
-
-<template>
-  <div>
-    <h1>Hello component, with composition API</h1>
-    <h2>Props:</h2>
-    <code>{{ JSON.stringify(props) }}</code>
-  </div>
-</template>
