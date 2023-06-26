@@ -24,6 +24,12 @@
             >Composition API</router-link
           >
         </li>
+
+        <li class="nav-item">
+          <router-link to="/options-api" class="nav-link" aria-current="page"
+            >Options API</router-link
+          >
+        </li>
       </ul>
     </div>
   </nav>
