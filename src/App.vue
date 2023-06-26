@@ -9,18 +9,22 @@ const rawHtml = "<span style='color: red'>this is a span</span>";
 </script>
 
 <template style="display: none">
-  <HelloOptionsAPI welcome-msg="hello !!" />
-  <HelloCompositionAPI welcome-msg="hey man" />
-  <Counter />
-
-  <div>
-    <p>raw html demo, using text interpolation: {{ rawHtml }}</p>
-    <p>raw html demo, using v-html directive: <span v-html="rawHtml"></span></p>
-  </div>
-
-  <Slots> Within a slot </Slots>
-  <Slots>
+  <div class="app-container container-fluid">
+    <HelloOptionsAPI welcome-msg="hello !!" />
+    <HelloCompositionAPI welcome-msg="hey man" />
     <Counter />
-  </Slots>
-  <Form />
+
+    <div>
+      <p>raw html demo, using text interpolation: {{ rawHtml }}</p>
+      <p>
+        raw html demo, using v-html directive: <span v-html="rawHtml"></span>
+      </p>
+    </div>
+
+    <Slots> Within a slot </Slots>
+    <Slots>
+      <Counter />
+    </Slots>
+    <Form />
+  </div>
 </template>
