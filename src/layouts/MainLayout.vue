@@ -1,7 +1,10 @@
 <template>
   <div class="app-container">
     <Navbar />
-    <slot />
+
+    <RouterView v-slot="{ Component }">
+      <component :is="Component"></component>
+    </RouterView>
   </div>
 </template>
 
