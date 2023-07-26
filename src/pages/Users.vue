@@ -1,41 +1,41 @@
 <template>
-  <h1 class="text-center">Users</h1>
+  <p v-if="isLoading">Loading...</p>
 
-  <div class="d-flex justify-content-center">
-    <button class="btn btn-primary" @click="increment">Increment {{ store.state.count }}</button>
-  </div>
-  <br />
-  <div class="d-flex justify-content-center">
-    <button class="btn btn-primary" @click="getUsers">Get users</button>
-  </div>
+  <div v-else class="users-container">
+    <h1 class="text-center">Users</h1>
 
-  <code>{{ store.getters.getCounter() }}</code>
-  <br />
-  <br />
-  <code>{{ store.getters.getUsers() }}</code>
+    <div class="d-flex justify-content-center">
+      <button class="btn btn-primary" @click="increment">Increment {{ storeCounter.counter }}</button>
+    </div>
+    <br />
+    <div class="d-flex justify-content-center">
+      <button class="btn btn-primary" @click="getUsers">Get users</button>
+    </div>
+
+    <code>{{ store.getters.getCounter() }}</code>
+    <br />
+    <br />
+    <code>{{ data }}</code>
+  </div>
 </template>
 
 <script lang="ts" setup>
-import { onMounted, ref } from "vue";
+import { onUpdated } from "vue";
 
-import store from "../store/index";
-import { get } from "../api/axios";
+import { useUsers } from "@/queries/Users";
+import store from "@/store/index";
 
-const usersRef = ref(null);
-const counterRef = ref(0);
+const storeCounter = store.getters.getCounter();
+
+const { data, isLoading } = useUsers();
+let counter = 0;
 
 const increment = () => {
-  counterRef.value = counterRef.value + 1;
-  store.commit("increment", counterRef.value);
+  counter = counter + 1;
+  store.commit("increment", counter);
 };
 
-const getUsers = () => {
-  const value = store.getters.getUsers();
-  usersRef.value = value;
-};
-
-onMounted(async () => {
-  const users = await get("/users");
-  store.commit("setUsers", users);
+onUpdated(() => {
+  console.log("updated");
 });
 </script>
