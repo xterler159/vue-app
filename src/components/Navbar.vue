@@ -20,15 +20,15 @@
         </li>
 
         <li class="nav-item">
-          <router-link to="/composition-api" class="nav-link" aria-current="page"
-            >Composition API</router-link
-          >
+          <router-link to="/composition-api" class="nav-link" aria-current="page">
+            Composition API
+          </router-link>
         </li>
 
         <li class="nav-item">
-          <router-link to="/options-api" class="nav-link" aria-current="page"
-            >Options API</router-link
-          >
+          <router-link to="/options-api" class="nav-link" aria-current="page">
+            Options API
+          </router-link>
         </li>
 
         <li class="nav-item">
@@ -36,7 +36,9 @@
         </li>
 
         <li class="nav-item">
-          <router-link to="dynamic-components-vue" class="nav-link" aria-current="page">Dynamic Components</router-link>
+          <router-link to="dynamic-components-vue" class="nav-link" aria-current="page">
+            Dynamic Components
+          </router-link>
         </li>
       </ul>
     </div>

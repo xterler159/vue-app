@@ -7,8 +7,6 @@
 </template>
 
 <script setup lang="ts">
-import {} from "vue";
-import MainLayout from "../layouts/MainLayout.vue";
 // we can declare props in this way too
 // const props = defineProps(["welcome-msg"]);
 

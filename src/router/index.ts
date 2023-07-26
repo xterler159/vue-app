@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from "vue-router";
+import { createRouter, createWebHistory, type RouteRecordRaw } from "vue-router";
 
 import RootPage from "../pages/Root.vue";
 import HelloCompositionAPIVue from "../components/HelloCompositionAPI.vue";
@@ -6,7 +6,7 @@ import HelloOptionsAPIVue from "../components/HelloOptionsAPI.vue";
 import DynamicComponentsVue from "../components/DynamicComponents/DynamicComponents.vue";
 import UsersVue from "../pages/Users.vue";
 
-export const routes = [
+export const routes: RouteRecordRaw[] = [
   {
     path: "/",
     name: "home",
@@ -15,6 +15,9 @@ export const routes = [
       {
         path: "/composition-api",
         component: HelloCompositionAPIVue,
+        props: {
+          welcomeMsg: "Hello !",
+        },
       },
       {
         path: "/dynamic-components-vue",
