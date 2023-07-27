@@ -5,12 +5,11 @@
     <h1 class="text-center">Users</h1>
 
     <div class="d-flex justify-content-center">
-      <button class="btn btn-primary" @click="increment">Increment {{ storeCounter.counter }}</button>
+      <button class="btn btn-primary" @click="increment">
+        Increment {{ storeCounter.counter }}
+      </button>
     </div>
     <br />
-    <div class="d-flex justify-content-center">
-      <button class="btn btn-primary" @click="getUsers">Get users</button>
-    </div>
 
     <code>{{ store.getters.getCounter() }}</code>
     <br />

@@ -16,7 +16,7 @@ import { ref } from "vue";
 import A from "./A.vue";
 import B from "./B.vue";
 
-const currentTab = ref(null);
+const currentTab = ref("");
 defineProps<DynamicComponentsProps>();
 const tabs = {
   A,

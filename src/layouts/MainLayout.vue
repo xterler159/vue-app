@@ -1,10 +1,10 @@
 <template>
   <div class="app-container">
-    <Navbar />
+    <navbar />
 
-    <RouterView v-slot="{ Component }">
-      <component :is="Component"></component>
-    </RouterView>
+    <router-view v-slot="{ Component }">
+      <component :is="Component" />
+    </router-view>
   </div>
 </template>
 
