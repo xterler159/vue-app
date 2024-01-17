@@ -6,6 +6,8 @@ import HelloOptionsAPIVue from "../components/HelloOptionsAPI.vue";
 import DynamicComponentsVue from "../components/DynamicComponents/DynamicComponents.vue";
 import UsersVue from "../pages/Users.vue";
 
+import ReactivityVue from "@/pages/reactivity/Reactivity.vue";
+
 export const routes: RouteRecordRaw[] = [
   {
     path: "/",
@@ -26,6 +28,7 @@ export const routes: RouteRecordRaw[] = [
       },
       { path: "/options-api", component: HelloOptionsAPIVue },
       { path: "/users", component: UsersVue },
+      { path: "/reactivity", component: ReactivityVue },
     ],
   },
 ];

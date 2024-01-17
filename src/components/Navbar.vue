@@ -36,8 +36,14 @@
         </li>
 
         <li class="nav-item">
-          <router-link to="dynamic-components-vue" class="nav-link" aria-current="page">
+          <router-link to="/dynamic-components-vue" class="nav-link" aria-current="page">
             Dynamic Components
+          </router-link>
+        </li>
+
+        <li class="nav-item">
+          <router-link to="/reactivity" class="nav-link" aria-current="page">
+            Reactivity Components
           </router-link>
         </li>
       </ul>
