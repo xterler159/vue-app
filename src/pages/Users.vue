@@ -21,7 +21,7 @@
 <script lang="ts" setup>
 import { onUpdated } from "vue";
 
-import { useUsers } from "@/queries/Users";
+import { useUsers } from "@/queries/users";
 import store from "@/store/index";
 
 const storeCounter = store.getters.getCounter();
