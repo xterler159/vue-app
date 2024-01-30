@@ -5,7 +5,7 @@
 </template>
 
 <script lang="ts" setup>
-import { ref, watch } from "vue";
+import { computed, ref, watch } from "vue";
 
 const defaultAnswer = "Questions usually contain a question mark. ;-)";
 

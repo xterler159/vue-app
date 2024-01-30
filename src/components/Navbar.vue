@@ -50,6 +50,10 @@
         <li class="nav-item">
           <router-link to="/slots" class="nav-link" aria-current="page">Slots</router-link>
         </li>
+
+        <li class="nav-item">
+          <router-link to="/computed" class="nav-link" aria-current="page">Computed</router-link>
+        </li>
       </ul>
     </div>
   </nav>

@@ -8,6 +8,7 @@ import UsersVue from "../pages/Users.vue";
 
 import ReactivityVue from "@/pages/reactivity/Reactivity.vue";
 import Slots from "@/components/slots/Slots.vue";
+import Computed from "@/pages/computed/Computed.vue";
 
 export const routes: RouteRecordRaw[] = [
   {
@@ -31,6 +32,7 @@ export const routes: RouteRecordRaw[] = [
       { path: "/users", component: UsersVue },
       { path: "/reactivity", component: ReactivityVue },
       { path: "/slots", component: Slots },
+      { path: "/computed", component: Computed },
     ],
   },
 ];
