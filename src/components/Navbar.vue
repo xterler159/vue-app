@@ -54,6 +54,10 @@
         <li class="nav-item">
           <router-link to="/computed" class="nav-link" aria-current="page">Computed</router-link>
         </li>
+
+        <li class="nav-item">
+          <router-link to="/watchers" class="nav-link" aria-current="page">Watchers</router-link>
+        </li>
       </ul>
     </div>
   </nav>

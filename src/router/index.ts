@@ -10,6 +10,7 @@ import ReactivityVue from "@/pages/reactivity/Reactivity.vue";
 import Slots from "@/components/slots/Slots.vue";
 import Computed from "@/pages/computed/Computed.vue";
 import Home from "@/pages/Home.vue";
+import Watchers from "@/pages/Watchers.vue";
 
 export const routes: RouteRecordRaw[] = [
   {
@@ -36,6 +37,7 @@ export const routes: RouteRecordRaw[] = [
       { path: "/slots", component: Slots },
       { path: "/computed", component: Computed },
       { path: "/home", component: Home },
+      { path: "/watchers", component: Watchers },
     ],
   },
 ];
