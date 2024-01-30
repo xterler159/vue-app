@@ -7,6 +7,7 @@ import DynamicComponentsVue from "../components/DynamicComponents/DynamicCompone
 import UsersVue from "../pages/Users.vue";
 
 import ReactivityVue from "@/pages/reactivity/Reactivity.vue";
+import Slots from "@/components/slots/Slots.vue";
 
 export const routes: RouteRecordRaw[] = [
   {
@@ -29,6 +30,7 @@ export const routes: RouteRecordRaw[] = [
       { path: "/options-api", component: HelloOptionsAPIVue },
       { path: "/users", component: UsersVue },
       { path: "/reactivity", component: ReactivityVue },
+      { path: "/slots", component: Slots },
     ],
   },
 ];
