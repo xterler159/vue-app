@@ -32,10 +32,6 @@
         </li>
 
         <li class="nav-item">
-          <router-link to="/users" class="nav-link" aria-current="page">Users</router-link>
-        </li>
-
-        <li class="nav-item">
           <router-link to="/dynamic-components-vue" class="nav-link" aria-current="page">
             Dynamic Components
           </router-link>
@@ -50,7 +46,7 @@
 
       <div class="dropdown">
         <button class="btn btn-primary dropdown-toggle" type="button" @click="handleDropDown">
-          Click me!
+          Show more...
         </button>
 
         <ul :class="`dropdown-menu ${isActiveDropDown ? 'show' : ''}`">
@@ -65,12 +61,14 @@
           <li class="dropdown-item">
             <router-link to="/slots" class="nav-link" aria-current="page">Slots</router-link>
           </li>
+
+          <li class="dropdown-item">
+            <router-link to="/stores" class="nav-link" aria-current="page">Stores</router-link>
+          </li>
         </ul>
       </div>
     </div>
   </nav>
-  <pre>{{ activeClass }}</pre>
-  <pre>{{ isActiveDropDown }}</pre>
 </template>
 <script setup lang="ts">
 import { computed, ref } from "vue";
