@@ -11,6 +11,7 @@ import Slots from "@/components/slots/Slots.vue";
 import Computed from "@/pages/computed/Computed.vue";
 import Home from "@/pages/Home.vue";
 import Watchers from "@/pages/Watchers.vue";
+import Stores from "@/pages/stores/Stores.vue";
 
 export const routes: RouteRecordRaw[] = [
   {
@@ -38,6 +39,7 @@ export const routes: RouteRecordRaw[] = [
       { path: "/computed", component: Computed },
       { path: "/home", component: Home },
       { path: "/watchers", component: Watchers },
+      { path: "/stores", component: Stores },
     ],
   },
 ];
